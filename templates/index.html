@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>지금까지의 일기</h2>
+<ul>
+    {% for diary in diaries %}
+    <li>
+        <a href="/diary/{{ diary.id }}">{{ diary.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

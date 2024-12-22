@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ diary.title }}</h2>
+<p>{{ diary.content }}</p>
+<a href="/diary/{{ diary.id }}/edit">수정</a>
+<form method="post" action="/diary/{{ diary.id }}/delete" style="display:inline;">
+    <button type="submit">삭제</button>
+</form>
+{% endblock %}

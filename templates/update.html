@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>일기 수정</h2>
+<form method="post" action="/diary/{{ diary.id }}/edit">
+    <label for="title">제목:</label>
+    <input type="text" id="title" name="title" value="{{ diary.title }}" required><br>
+    <label for="content">내용:</label>
+    <textarea id="content" name="content" required>{{ diary.content }}</textarea><br>
+    <button type="submit">수정</button>
+</form>
+{% endblock %}
