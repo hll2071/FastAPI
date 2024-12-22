@@ -3,3 +3,4 @@ uvicorn
 pymysql
 sqlalchemy
 jinja2
+python-dotenv
